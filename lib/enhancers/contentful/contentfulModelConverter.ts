@@ -4,7 +4,7 @@ import { ComponentInstance } from '@uniformdev/canvas';
 export const contentfulModelConverter = ({ component, parameter }: { component: ComponentInstance; parameter: any }) => {
 
   //adjust component type to match - adjust mapping capabilities to match
-  if (component.type === 'HeroContentful') {   
+  if (component.type === 'heroCms') {   
 
     const returnValue = {
       title: parameter?.value?.fields?.title || '', 
@@ -13,7 +13,7 @@ export const contentfulModelConverter = ({ component, parameter }: { component: 
       buttonLink: parameter?.value?.fields?.buttonLinkSlug || '', 
       image: transformContentfulImage(parameter?.value?.fields?.image) || '',
     };
-
+console.log("returnValue", returnValue)
     return returnValue;
   }
 

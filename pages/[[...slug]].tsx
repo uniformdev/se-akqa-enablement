@@ -18,8 +18,6 @@ export async function getStaticProps(context: GetStaticPropsContext) {
   const composition  = await getCompositionByNodePath(slugString, preview);
   const navLinks = await getCompositionsForNavigation();
 
-console.log("composition", JSON.stringify(composition, null, 2));
-
   return {
     props: {
       composition,

@@ -7,8 +7,9 @@ import {
 } from "@uniformdev/canvas-react";
 
 import Hero from "./Hero";
-import Test from "./Test";
 import Footer from "./Footer";
+import { HeroCms } from "./HeroCms";
+import MyComponent from "./MyComponent";
 
 const components: UniformComponent[] = [
 	{
@@ -17,10 +18,18 @@ const components: UniformComponent[] = [
 		],
 		component: Hero,
 	},
+	{
+		type: "heroCms",
+		component: HeroCms,
+	},
     {
-        type: "test",
-        component: Test,
+        type: "mycomponent",
+        component: MyComponent,
     },
+	{
+		type: "test",
+		component:DefaultNotImplementedComponent,
+	},
 	// {
 	// 	type: "navigation",
 	// 	component: DefaultNotImplementedComponent,

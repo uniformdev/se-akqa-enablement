@@ -31,7 +31,6 @@ export async function getCompositionByNodePath(slug: string, preview: boolean){
   
   await runEnhancers(composition, { preview });  
 
-  console.log("composition", JSON.stringify(composition, null, 2))
   return composition;
 }
 
