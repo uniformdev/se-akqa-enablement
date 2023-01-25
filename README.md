@@ -1,3 +1,3 @@
-# se-akqa-enablement
+# ENABLEMENT FOR AKQA
 
 Temporary repo for enablement session
