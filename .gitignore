@@ -37,3 +37,6 @@ yarn-error.log*
 
 # ignore for the sake of StackBlitz
 package-lock.json
+
+# Local Netlify folder
+.netlify
